@@ -199,28 +199,33 @@ class CardScrollWidget extends StatelessWidget {
                           alignment: Alignment.bottomLeft,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment:CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Padding(
-                                padding: const EdgeInsets.symmetric(vertical:8.0,horizontal: 16.0),
-                                child: Text(title[i],style:TextStyle(color: Colors.white,fontSize: 20.0)),
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 8.0, horizontal: 16.0),
+                                child: Text(title[i],
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20.0)),
                               ),
-                              SizedBox(height:10.0),
+                              SizedBox(height: 10.0),
                               Padding(
-                                padding: const EdgeInsets.only(left:12.0,bottom:12.0),
+                                padding: const EdgeInsets.only(
+                                    left: 12.0, bottom: 12.0),
                                 child: Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 22.0,vertical: 6.0),
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 22.0, vertical: 6.0),
                                   decoration: BoxDecoration(
-                                    color: Colors.blueAccent,
-                                    borderRadius: BorderRadius.circular(20.0)
-                                  ),
-                                  child: Text('Read Later',style:TextStyle(color: Colors.white)),
-                                  ),
+                                      color: Colors.blueAccent,
+                                      borderRadius:
+                                          BorderRadius.circular(20.0)),
+                                  child: Text('Read Later',
+                                      style: TextStyle(color: Colors.white)),
+                                ),
                               ),
-                              
                             ],
                           ),
-                        
+                        )
                       ],
                     ),
                   ),
@@ -237,4 +242,3 @@ class CardScrollWidget extends StatelessWidget {
     );
   }
 }
-
